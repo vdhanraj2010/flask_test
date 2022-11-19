@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>ABOUT</title>
+    </head>
+    <body>
+        <h1>Hi, Viewer!</h1>
+        {% for data in sample_data %}
+            <div><p>{{ data.author.username }} says: <b>{{ data.body }}</b></p></div>
+        {% endfor %}
+        <div>
+            <a href="/">Index Page</a>
+            <a href='/test1'>Test1 page</a>
+            <a href='/test2'>Test2 page</a>
+            <a href='/pokemon'>Pokemon page</a>
+        </div>
+    </body>
+</html>
+

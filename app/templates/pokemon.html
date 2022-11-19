@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+
+{% block title %}
+    <h2><font face='Comfortaa' color='lava red'>Here is the latest POKEMON SCARLET/VIOLET News:</font></h2>
+{% endblock %}
+{% block body %}
+        
+        {% for date, news in pokeNews.items() %}
+        <dl><font face='Verdana' color='ocean blue'><dt>{{ date }}</dt></font>
+            {% for info in news %}
+                {% for new, more in info.items() %}
+                    <dd><a href={{more}}>{{ new }}</a></dd>
+                {% endfor %}
+            {% endfor %}
+            </dl>
+        {% endfor %}
+    <hr>
+    <h2>    !SPOILERS!    LEAKED INFO: </h3>
+    <div><font face='Comfortaa' color='emerald'><a href="https://docs.google.com/spreadsheets/d/1Ox3SwLFTP0ZfOj-O-1ijn8Im8kU0QnjNyi3AJ6a5feM/htmlview?pru=AAABhIdzvv8*mEw-p-HlUvJ3pJrlJtpjmw#">
+        Full Datamine Master Spreadsheet: Full Pokedex, Movesets, Abilities, etc.</a></li></font>/div>
+    <hr>
+    <h2><font face='Courier New' color='blue violet'>There is exactly {{ timeLeft }} left until release (PST)</h2></div></h2></font>
+    {% for name, link in links.items() %}
+            <div><p><a href={{link}}>{{ name }}</a></p></div>
+    {% endfor %}
+{% endblock %}

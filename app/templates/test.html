@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+
+{% block title %}
+    "TEST"
+{% endblock %}
+{% block body %}
+
+    <h1>Hi, {{ user.username }}!</h1>
+    <h2>My age is {{age}}</h2>
+<div>
+    <a href="/">Index Page</a>
+    <a href='/test2'>Test2 page</a>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title> Index - Sample Flask App</title>
+    </head>
+    <body>
+        <h1>Hi, {{ user.username }}!</h1>
+        {% for data in sample_data %}
+            <div><p>{{ data.author.username }} says: <b>{{ data.body }}</b></p></div>
+        {% endfor %}
+        <div><a href='/test'>Test1 page</a></div>
+    </body>
+</html>
